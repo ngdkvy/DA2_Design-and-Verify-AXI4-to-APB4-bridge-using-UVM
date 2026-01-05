@@ -1,0 +1,197 @@
+# vsim -sv_seed 423741 -voptargs="+acc" -assertdebug -c testbench -do " log -r /*;run -all;" -l rd_fixed_psel3_2byte_no_error_test_423741.log "+UVM_TESTNAME=rd_fixed_psel3_2byte_no_error_test" "+UVM_VERBOSITY=UVM_HIGH" 
+# Start time: 15:07:41 on Jan 05,2026
+# Loading /tmp/khanhvy@ictc-eda-ldap.ipa.test_dpi_24905/linux_x86_64_gcc-11/export_tramp.so
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim-64
+# //  Version 10.6d_1 linux_x86_64 Apr 11 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.axi_if(fast)
+# Loading work.apb_if(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.apb_pkg(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.axi_pkg(fast)
+# Loading work.env_pkg(fast)
+# Loading work.seq_pkg(fast)
+# Loading work.test_pkg(fast)
+# Loading work.testbench(fast)
+# Loading work.axi_if(fast)
+# Loading work.apb_if(fast)
+# Loading work.AXI_to_APB_bridge(fast)
+# Loading work.axi_slave(fast)
+# Loading work.asys_FIFO(fast)
+# Loading work.asys_FIFO(fast__1)
+# Loading work.asys_FIFO(fast__2)
+# Loading work.apb_master(fast)
+# Loading work.rw_arbiter(fast)
+# Loading work.addr_decoder(fast)
+# Compiling /tmp/khanhvy@ictc-eda-ldap.ipa.test_dpi_24905/linux_x86_64_gcc-5.3.0/exportwrapper.c
+# Compiling /tmp/khanhvy@ictc-eda-ldap.ipa.test_dpi_24905/linux_x86_64_gcc-11/exportwrapper.c
+# Loading /tmp/khanhvy@ictc-eda-ldap.ipa.test_dpi_24905/linux_x86_64_gcc-11/vsim_auto_compile.so
+#  log -r /*
+# run -all
+# UVM_INFO /ictc/other/tools/QuestaDVA/questasim/verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO /ictc/other/tools/QuestaDVA/questasim/verilog_src/uvm-1.2/src/base/uvm_root.svh(453) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+# UVM_INFO @ 0: reporter [RNTST] Running test rd_fixed_psel3_2byte_no_error_test...
+# UVM_INFO ./../testcases/apb_base_test.sv(16) @ 0: uvm_test_top [build_phase] Entered...
+# UVM_INFO ./../testcases/apb_base_test.sv(33) @ 0: uvm_test_top [build_phase] Exiting...
+# UVM_INFO ./../tb/apb_environment.sv(17) @ 0: uvm_test_top.apb_env [build_phase] Entered...
+# UVM_INFO ./../tb/apb_environment.sv(33) @ 0: uvm_test_top.apb_env [build_phase] Exiting...
+# UVM_INFO ./../tb/apb_scoreboard.sv(29) @ 0: uvm_test_top.apb_env.apb_sb [apb_scoreboard] Build_phase done!
+# UVM_INFO ./../tb/apb_environment.sv(38) @ 0: uvm_test_top.apb_env [connect_phase] Entered...
+# UVM_INFO ./../tb/apb_environment.sv(41) @ 0: uvm_test_top.apb_env [connect_phase] Exiting...
+# UVM_INFO /ictc/other/tools/QuestaDVA/questasim/verilog_src/uvm-1.2/src/base/uvm_traversal.svh(279) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+# UVM_INFO ./../testcases/apb_base_test.sv(37) @ 0: uvm_test_top [start_of_simulation_phase] Entered...
+# UVM_INFO /ictc/other/tools/QuestaDVA/questasim/verilog_src/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------------------
+# Name                       Type                                Size  Value
+# --------------------------------------------------------------------------
+# uvm_test_top               rd_fixed_psel3_2byte_no_error_test  -     @351 
+#   apb_env                  apb_environment                     -     @369 
+#     apb_agt                apb_agent                           -     @403 
+#       driver               apb_driver                          -     @433 
+#         rsp_port           uvm_analysis_port                   -     @452 
+#         seq_item_port      uvm_seq_item_pull_port              -     @442 
+#       monitor              apb_monitor                         -     @604 
+#         apb_item_act       uvm_analysis_port                   -     @613 
+#       sequencer            apb_sequencer                       -     @462 
+#         rsp_export         uvm_analysis_export                 -     @471 
+#         seq_item_export    uvm_seq_item_pull_imp               -     @589 
+#         arbitration_queue  array                               0     -    
+#         lock_queue         array                               0     -    
+#         num_last_reqs      integral                            32    'd1  
+#         num_last_rsps      integral                            32    'd1  
+#     apb_sb                 apb_scoreboard                      -     @394 
+#       apb_item_exp         uvm_analysis_imp_apb                -     @646 
+#       axi_item_exp         uvm_analysis_imp_axi                -     @636 
+#     axi_agt                axi_agent                           -     @412 
+#       driver               axi_driver                          -     @661 
+#         rsp_port           uvm_analysis_port                   -     @680 
+#         seq_item_port      uvm_seq_item_pull_port              -     @670 
+#       monitor              axi_monitor                         -     @830 
+#         axi_item_act       uvm_analysis_port                   -     @839 
+#       sequencer            axi_sequencer                       -     @690 
+#         rsp_export         uvm_analysis_export                 -     @699 
+#         seq_item_export    uvm_seq_item_pull_imp               -     @817 
+#         arbitration_queue  array                               0     -    
+#         lock_queue         array                               0     -    
+#         num_last_reqs      integral                            32    'd1  
+#         num_last_rsps      integral                            32    'd1  
+# --------------------------------------------------------------------------
+# 
+# UVM_INFO ./../testcases/apb_base_test.sv(39) @ 0: uvm_test_top [start_of_simulation_phase] Exiting...
+# UVM_INFO ./../sequences/rd_fixed_psel3_2byte_no_error_sequence.sv(18) @ 0: uvm_test_top.apb_env.axi_agt.sequencer@@rd_fixed_psel3_2byte_no_error_seq [rd_fixed_psel3_2byte_no_error_sequence] Send req to driver: 
+#  ------------------------------------------------------------------------------------------------------------------------------------
+# Name                           Type                   Size  Value                                                                   
+# ------------------------------------------------------------------------------------------------------------------------------------
+# req                            axi_transaction        -     @904                                                                    
+#   xact_type                    xact_type_enum         2     READ                                                                    
+#   burst_type                   burst_type_enum        2     FIXED                                                                   
+#   size_type                    size_type_enum         3     BYTE_2                                                                  
+#   addr                         integral               32    'h2d30                                                                  
+#   data                         da(integral)           1     -                                                                       
+#     [0]                        integral               32    'hbd57372f                                                              
+#   len                          integral               8     'h0                                                                     
+#   strb                         da(integral)           1     -                                                                       
+#     [0]                        integral               4     'hf                                                                     
+#   error                        array(error_response)  1     -                                                                       
+#     [0]                        error_response         2     OKAY                                                                    
+#   begin_time                   time                   64    0                                                                       
+#   depth                        int                    32    'd2                                                                     
+#   parent sequence (name)       string                 33    rd_fixed_psel3_2byte_no_error_seq                                       
+#   parent sequence (full name)  string                 72    uvm_test_top.apb_env.axi_agt.sequencer.rd_fixed_psel3_2byte_no_error_seq
+#   sequencer                    string                 38    uvm_test_top.apb_env.axi_agt.sequencer                                  
+# ------------------------------------------------------------------------------------------------------------------------------------
+# 
+# UVM_INFO ./../vip/axi_vip/axi_monitor.sv(64) @ 0: uvm_test_top.apb_env.axi_agt.monitor [axi_monitor] Start capture AXI read transaction
+# UVM_INFO ./../tb/apb_scoreboard.sv(74) @ 0: uvm_test_top.apb_env.apb_sb [apb_scoreboard] Added to APB read queue
+# UVM_INFO ./../tb/apb_scoreboard.sv(58) @ 0: uvm_test_top.apb_env.apb_sb [apb_scoreboard] Response data is correct 
+# UVM_INFO ./../tb/apb_scoreboard.sv(141) @ 0: uvm_test_top.apb_env.apb_sb [apb_scoreboard] Address is matching
+# UVM_INFO ./../tb/apb_scoreboard.sv(162) @ 0: uvm_test_top.apb_env.apb_sb [apb_scoreboard] PSEL is matching
+# UVM_INFO ./../tb/apb_scoreboard.sv(177) @ 0: uvm_test_top.apb_env.apb_sb [apb_scoreboard] Strobe is matching
+# UVM_INFO ./../tb/apb_scoreboard.sv(183) @ 0: uvm_test_top.apb_env.apb_sb [apb_scoreboard] Data is matching
+# UVM_INFO ./../tb/apb_scoreboard.sv(128) @ 0: uvm_test_top.apb_env.apb_sb [apb_scoreboard] -----------------------
+# UVM_INFO ./../tb/apb_scoreboard.sv(129) @ 0: uvm_test_top.apb_env.apb_sb [apb_scoreboard] --    TEST PASSED    --
+# UVM_INFO ./../tb/apb_scoreboard.sv(130) @ 0: uvm_test_top.apb_env.apb_sb [apb_scoreboard] -----------------------
+# UVM_INFO ./../sequences/rd_fixed_psel3_2byte_no_error_sequence.sv(22) @ 10000: uvm_test_top.apb_env.axi_agt.sequencer@@rd_fixed_psel3_2byte_no_error_seq [rd_fixed_psel3_2byte_no_error_sequence] Recevied rsp to driver: 
+#  -----------------------------------------------------
+# Name          Type                   Size  Value     
+# -----------------------------------------------------
+# req           axi_transaction        -     @976      
+#   xact_type   xact_type_enum         2     READ      
+#   burst_type  burst_type_enum        2     FIXED     
+#   size_type   size_type_enum         3     BYTE_2    
+#   addr        integral               32    'h2d30    
+#   data        da(integral)           1     -         
+#     [0]       integral               32    'hbd57372f
+#   len         integral               8     'h0       
+#   strb        da(integral)           1     -         
+#     [0]       integral               4     'hf       
+#   error       array(error_response)  1     -         
+#     [0]       error_response         2     OKAY      
+#   begin_time  time                   64    0         
+#   end_time    time                   64    0         
+# -----------------------------------------------------
+# 
+# UVM_INFO /ictc/other/tools/QuestaDVA/questasim/verilog_src/uvm-1.2/src/base/uvm_objection.svh(1271) @ 10000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /ictc/other/tools/QuestaDVA/questasim/verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 10000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   27
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [NO_DPI_TSTNAME]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/COMP/NAMECHECK]     1
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# [apb_scoreboard]    10
+# [axi_monitor]     1
+# [build_phase]     4
+# [connect_phase]     2
+# [rd_fixed_psel3_2byte_no_error_sequence]     2
+# [start_of_simulation_phase]     2
+# 
+# ** Note: $finish    : /ictc/other/tools/QuestaDVA/questasim/verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 10285 ns  Iteration: 73  Instance: /testbench
+# End time: 15:07:44 on Jan 05,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
