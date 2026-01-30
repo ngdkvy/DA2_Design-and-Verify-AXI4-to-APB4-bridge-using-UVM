@@ -60,9 +60,7 @@ module axi_slave #(parameter DEPTH_AX = 3, DEPTH_WR = 8)
      output wire         rd_almost_full 
 );
      wire           aw_full, ar_full         ;
-     wire           awready_tmp, arready_tmp ;
      wire           w_full                   ;
-     wire           wready_tmp               ;
      wire           rd_empty                 ;
      wire           rlast_tmp                ;
      wire [1:0]     bresp_tmp                ;
