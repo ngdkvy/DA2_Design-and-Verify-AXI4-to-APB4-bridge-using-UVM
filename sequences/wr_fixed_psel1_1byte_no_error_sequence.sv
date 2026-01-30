@@ -19,6 +19,6 @@ class wr_fixed_psel1_1byte_no_error_sequence extends uvm_sequence #(axi_transact
           finish_item(req);
           get_response(rsp);
           #10us;
-          `uvm_info(get_type_name(), $sformatf("Recevied rsp to driver: \n %s", rsp.sprint()), UVM_LOW);
+          //`uvm_info(get_type_name(), $sformatf("Recevied rsp to driver: \n %s", rsp.sprint()), UVM_LOW);
      endtask
 endclass

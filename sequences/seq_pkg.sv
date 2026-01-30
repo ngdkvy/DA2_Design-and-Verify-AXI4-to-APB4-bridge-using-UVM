@@ -13,8 +13,8 @@ package seq_pkg;
      `include "wr_fixed_psel3_2byte_no_error_sequence.sv"
      `include "wr_fixed_psel3_4byte_no_error_sequence.sv"
      `include "multiple_wr_fixed_sequence.sv"
-
-     `include "wr_incr_psel1_1byte_no_error_sequence.sv"
+     
+	`include "wr_incr_psel1_1byte_no_error_sequence.sv"
      `include "wr_incr_psel1_2byte_no_error_sequence.sv"
      `include "wr_incr_psel1_4byte_no_error_sequence.sv"
      `include "wr_incr_psel2_1byte_no_error_sequence.sv"
@@ -23,10 +23,10 @@ package seq_pkg;
      `include "wr_incr_psel3_1byte_no_error_sequence.sv"
      `include "wr_incr_psel3_2byte_no_error_sequence.sv"
      `include "wr_incr_psel3_4byte_no_error_sequence.sv"
-     `include "wr_incr_psel12_4byte_no_error_sequence.sv"
+     `include "wr_incr_psel12_4byte_no_error_sequence.sv"	
      `include "wr_incr_psel23_4byte_no_error_sequence.sv"
      `include "multiple_wr_incr_sequence.sv"
-
+			
      `include "wr_wrap_psel1_1byte_no_error_sequence.sv"
      `include "wr_wrap_psel1_2byte_no_error_sequence.sv"
      `include "wr_wrap_psel1_4byte_no_error_sequence.sv"
@@ -78,4 +78,7 @@ package seq_pkg;
      `include "multiple_rd_wrap_sequence.sv"
 
      `include "wr_rd_random_sequence.sv"
+
+	`include "wr_rd_random_address_sequence.sv"
+	`include "multiple_wr_rd_sequence.sv"
 endpackage: seq_pkg
