@@ -38,11 +38,11 @@ class axi_transaction extends uvm_sequence_item;
      constraint config_c {
           solve burst_type before len;
           if (burst_type == WRAP)
-               len inside {1, 3, 7, 15};
+               soft len inside {1, 3, 7, 15};
           else if (burst_type == FIXED)
-               len inside {0, 1};
+               soft len inside {0, 1};
           else if (burst_type == INCR)
-               len inside {0, 18}; //Reality: 0 -> 256
+               soft len inside {0, 18}; //Reality: 0 -> 256
      }
      constraint array_size_data_strb {
           if ((xact_type == WRITE) || (xact_type == READ))
