@@ -1,5 +1,5 @@
-`uvm_analysis_imp_decl(_axi)
-`uvm_analysis_imp_decl(_apb)
+//`uvm_analysis_imp_decl(_axi)
+//`uvm_analysis_imp_decl(_apb)
 
 class apb_scoreboard extends uvm_scoreboard;
      `uvm_component_utils (apb_scoreboard)
@@ -13,11 +13,11 @@ class apb_scoreboard extends uvm_scoreboard;
      int error = 0;
      int incr_byte;
      
-     `include "apb_coverage.sv"
+     apb_coverage APB_IP;
 
      function new (string name = "apb_scoreboard", uvm_component parent);
           super.new(name, parent);
-          APB_IP = new();
+          APB_IP = apb_coverage::type_id::create("APB_IP", this);
      endfunction: new
 
      virtual function void build_phase (uvm_phase phase);
@@ -42,7 +42,7 @@ class apb_scoreboard extends uvm_scoreboard;
                check_error(count_beat, axi_trans);
                compare_read(axi_trans);
           end
-          APB_IP.sample(axi_trans);
+          APB_IP.write_axi(axi_trans);
      endfunction: write_axi
      
      virtual function void check_error (int count, axi_transaction axi_trans);
@@ -73,13 +73,13 @@ class apb_scoreboard extends uvm_scoreboard;
                apb_read_queue.push_back(apb_trans);
                `uvm_info(get_type_name(), "Added to APB read queue", UVM_HIGH)
           end  
+          APB_IP.write_apb(apb_trans);
      endfunction: write_apb
 
      virtual function void compare_write(axi_transaction axi_trans);
           apb_transaction apb_trans;
           bit [31:0] exp_addr;
           int count_write = 0;
-         
           for (int i = 0; i < axi_trans.len + 1; i++)
           begin
                apb_trans = apb_write_queue.pop_front();

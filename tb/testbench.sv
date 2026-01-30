@@ -70,10 +70,12 @@ module testbench;
      initial begin
           ARESETn = 0;
           #20ns ARESETn = 1;
+		#10us; ARESETn = 0;
      end
      initial begin
           PRESETn = 0;
           #20ns PRESETn = 1;
+		#10us; PRESETn = 0;
      end
      initial begin
           ACLK = 0;
