@@ -22,7 +22,6 @@ package test_pkg;
      import env_pkg::*;
 
      `include "apb_base_test.sv"
-
      `include "wr_fixed_psel1_1byte_no_error_test.sv"
      `include "wr_fixed_psel1_2byte_no_error_test.sv"
      `include "wr_fixed_psel1_4byte_no_error_test.sv"
@@ -124,5 +123,8 @@ package test_pkg;
      `include "multiple_rd_wrap_test.sv"
 
      `include "wr_rd_random_test.sv"
+
+	`include "multiple_wr_rd_test.sv"
+	`include "multiple_wr_rd_address_test.sv"
 endpackage: test_pkg
 `endif
