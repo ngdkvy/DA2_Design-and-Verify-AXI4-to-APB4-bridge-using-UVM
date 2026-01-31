@@ -1,7 +1,8 @@
 # Design-and-Verify-AXI4-to-APB4-bridge-using-UVM
 This is an implementation of a bridge between an AXI4-Full master and an APB4 slave. After that, the design is verified using a UVM.
 ## Architecture
-<img width="676" height="387" alt="image" src="https://github.com/user-attachments/assets/8c30ebf4-f655-47ff-814f-911f81fa2e61" />
+<img width="543" height="311" alt="image" src="https://github.com/user-attachments/assets/c4b2775b-7912-40f7-917e-af11df1f9716" />
+
 ## Simulation environment structure
 1. Checker - all SV checkers if any
 2. rtl - RTL code
