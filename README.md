@@ -4,6 +4,7 @@ This is an implementation of a bridge between an AXI4-Full master and an APB4 sl
 <img width="543" height="311" alt="image" src="https://github.com/user-attachments/assets/c4b2775b-7912-40f7-917e-af11df1f9716" />
 
 ## Simulation environment structure
+1. document - ppt, report and Vplan
 1. Checker - all SV checkers if any
 2. rtl - RTL code
 3. sequences - include many sequence item
