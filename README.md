@@ -5,7 +5,6 @@ This is an implementation of a bridge between an AXI4-Full master and an APB4 sl
 
 ## Simulation environment structure
 1. document - ppt, report and Vplan
-1. Checker - all SV checkers if any
 2. rtl - RTL code
 3. sequences - include many sequence item
 4. sim - execution scripts
